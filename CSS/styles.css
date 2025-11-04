@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@media (min-width:0px) and (max-width:767px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-toggle:checked+.menu-icon+.navbar {
+    display: flex;
+  }
+}
+
+
+@media (min-width:768px) and (max-width:1023px) {
+  body {
+    flex-direction: column;
+  }
+
+}
+
+
+@media (min-width:1024px) {
+  body {
+    background-color: red;
+  }
+  
+
+}
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+.banner {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+header {
+  background: linear-gradient(to bottom, black, purple);
+  color: aliceblue;
+  text-align: center;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+nav {
+  background-color: rgb(94 5 111);
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+main h1 {
+  color: aliceblue;
+}
+
+footer {
+  background-color: rgb(70, 23, 94);
+  color: aliceblue;
+  text-align: center;
+  padding: 1rem;
+  align-items: flex-end;
+
+}
+
+main {
+  background: linear-gradient(to right, rgb(75, 35, 95), rgb(86, 34, 77));
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  flex-direction: column;
+
+
+}
+
+.parrafo {
+  color: aliceblue;
+  font-family: "Playfair Display", cursive;
+  font-size: 24px;
+  text-align: left;
+  text-decoration: double;
+  text-transform: uppercase;
+  padding: 100px;
+  border-width: 10px;
+  border-color: deeppink;
+  border-style: none;
+  border-radius: 5%;
+}
+
+main {
+  font-family: "Playfair Display", cursive;
+}
+
+
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+.carousel img{
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+footer .fecha {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.redes-sociales {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.redes-sociales a {
+  text-decoration: none;
+  color: white;
+  text-align: start;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
